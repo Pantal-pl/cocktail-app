@@ -1,0 +1,24 @@
+@import 'config';
+
+.drink-information {
+    width: 100%;
+    margin-top: 5em;
+    min-height: 50vh;
+    background: red;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & .drink-image {
+        aspect-ratio: 1/1;
+    }
+    & .drink-description {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
