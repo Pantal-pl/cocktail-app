@@ -8,7 +8,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 for (let i = 0; i < 15; i++) {
-  abstractContainer.innerHTML += `<img class="abstract abstract${i}" src="../dist/images/${
+  abstractContainer.innerHTML += `<img class="abstract abstract${i}" src="dist/images/${
     figures[getRandomInt(0, 2)]
   }.svg">`;
   abstracts[i] = document.querySelector(`.abstract${i}`);
@@ -20,7 +20,7 @@ for (let i = 0; i < 15; i++) {
 setInterval(() => {
   abstractContainer.innerHTML = "";
   for (let i = 0; i < 15; i++) {
-    abstractContainer.innerHTML += `<img class="abstract abstract${i}" src="../dist/images/${
+    abstractContainer.innerHTML += `<img class="abstract abstract${i}" src="dist/images/${
       figures[getRandomInt(0, 2)]
     }.svg">`;
     abstracts[i] = document.querySelector(`.abstract${i}`);
